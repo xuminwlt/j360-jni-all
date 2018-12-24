@@ -26,4 +26,10 @@ public class ImageBridgeCallback {
         System.out.println("---------");
     }
 
+    public void call2() {
+        System.out.println("---------");
+        System.out.println("cid:" + cid);
+        System.out.println("---------");
+    }
+
 }
