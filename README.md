@@ -42,6 +42,8 @@ Run/Debug Configurations的VM Options里添加：
     -Djava.library.path=/usr/java/local
 
 - 程序动态添加
+
+```
 private static void loadJNILibDynamically() {
         try {
             System.setProperty("java.library.path", System.getProperty("java.library.path")
@@ -55,3 +57,4 @@ private static void loadJNILibDynamically() {
             // do nothing for exception
         }
     }
+```
