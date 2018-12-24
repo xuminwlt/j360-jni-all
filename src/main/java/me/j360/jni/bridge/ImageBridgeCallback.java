@@ -7,25 +7,23 @@ package me.j360.jni.bridge;
  */
 public class ImageBridgeCallback {
 
-    private String localUrl;
-
-    public ImageBridgeCallback(String localUrl) {
-        this.localUrl = localUrl;
+    static {
+        System.loadLibrary("ImageBridgeCallback");
     }
 
-    public void call() {
+    private String cid;
+
+    private ImageBridgeCallback(String cid) {
+        this.cid = cid;
+    }
+
+    public static native ImageBridgeCallback getInstance();
+
+    public void call(String localUrl) {
         //TODO
         System.out.println("---------");
-        System.out.println(localUrl);
+        System.out.println("cid:" + cid + " localUrl:" + localUrl);
         System.out.println("---------");
     }
 
-
-    public String getLocalUrl() {
-        return localUrl;
-    }
-
-    public void setLocalUrl(String localUrl) {
-        this.localUrl = localUrl;
-    }
 }
