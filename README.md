@@ -58,3 +58,8 @@ private static void loadJNILibDynamically() {
         }
     }
 ```
+
+
+-- library
+
+https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/functions.html
