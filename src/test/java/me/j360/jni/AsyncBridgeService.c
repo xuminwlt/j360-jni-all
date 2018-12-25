@@ -1,5 +1,4 @@
 #include "me_j360_jni_bridge_AsyncBridgeService.h"
-#include "me_j360_jni_bridge_BridgeListener.h"
 
 JavaVM* jvm;
 
